@@ -39,6 +39,7 @@ namespace familyGroup.Controllers
         [ResponseType(typeof(void))]
         public IHttpActionResult Putusers(int id, users users)
         {
+            users.updated_at = DateTime.Now;
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -74,6 +75,8 @@ namespace familyGroup.Controllers
         [ResponseType(typeof(users))]
         public IHttpActionResult Postusers(users users)
         {
+            users.updated_at = DateTime.Now;
+            users.created_at = DateTime.Now;
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

@@ -6,8 +6,7 @@ namespace familyGroup.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("familyGroup")]
-    public partial class familyGroup
+    public partial class family_group
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id { get; set; }

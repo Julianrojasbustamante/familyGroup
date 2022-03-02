@@ -12,7 +12,7 @@ namespace familyGroup.Models
         {
         }
 
-        public virtual DbSet<familyGroup> familyGroup { get; set; }
+        public virtual DbSet<family_group> family_group { get; set; }
         public virtual DbSet<users> users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
